@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+(function($){
+	$(document).ready(function(){
+		$('.status').mouseenter(function(){
+			$('.status > span.meta').fadeIn();
+		});
+	});
+})(jQuery)
